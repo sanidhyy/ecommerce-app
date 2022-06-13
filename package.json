@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/core": "^7.18.5",
     "@sanity/client": "^3.2.0",
     "@sanity/image-url": "^1.0.1",
     "@stripe/stripe-js": "^1.25.0",
@@ -22,6 +23,7 @@
     "stripe": "^8.209.0"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.17.12",
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6"
   }
