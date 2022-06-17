@@ -17,9 +17,13 @@ export const StateContext = ({ children }) => {
   const PRODUCT_QTY = "cart_product_qty";
 
   useEffect(() => {
-    const cart_product_items = JSON.parse(localStorage.getItem(PRODUCT_ITEMS));
-    const cart_product_price = localStorage.getItem(PRODUCT_PRICE);
-    const cart_product_qty = localStorage.getItem(PRODUCT_QTY);
+    const cart_product_items = JSON.parse(
+      localStorage.getItem(PRODUCT_ITEMS) || "[]"
+    );
+    const cart_product_price = parseInt(
+      localStorage.getItem(PRODUCT_PRICE) || 0
+    );
+    const cart_product_qty = parseInt(localStorage.getItem(PRODUCT_QTY) || 0);
 
     setCartItems(cart_product_items);
     setTotalPrice(cart_product_price);
