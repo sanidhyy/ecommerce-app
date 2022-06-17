@@ -13,6 +13,7 @@ import { useStateContext } from "../context/StateContext";
 import { urlFor } from "../lib/client";
 import getStripe from "../lib/getStripe";
 
+// Cart
 const Cart = () => {
   const cartRef = useRef();
   const {
@@ -24,9 +25,11 @@ const Cart = () => {
     onRemove,
   } = useStateContext();
 
+  // handle Checkout
   const handleCheckout = async () => {
     const stripe = await getStripe();
 
+    // checkout response
     const response = await fetch("/api/stripe", {
       method: "POST",
       headers: {
@@ -35,17 +38,20 @@ const Cart = () => {
       body: JSON.stringify(cartItems),
     });
 
+    // server error
     if (response.statusCode === 500) return;
 
     const data = await response.json();
 
     toast.loading("Redirecting...");
 
+    // redirect to checkout
     stripe.redirectToCheckout({ sessionId: data.id });
   };
 
   return (
     <div className="cart-wrapper" ref={cartRef}>
+      {/* Cart */}
       <div className="cart-container">
         <button
           type="button"
@@ -57,6 +63,7 @@ const Cart = () => {
           <span className="cart-num-items">({totalQuantities} items)</span>
         </button>
 
+        {/* Empty Cart */}
         {cartItems.length < 1 && (
           <div className="empty-cart">
             <AiOutlineShopping size={150} />
@@ -73,6 +80,7 @@ const Cart = () => {
           </div>
         )}
 
+        {/* Cart Items */}
         <div className="product-container">
           {cartItems.length >= 1 &&
             cartItems.map((item) => (
@@ -123,6 +131,8 @@ const Cart = () => {
               </div>
             ))}
         </div>
+
+        {/* Overall Info */}
         {cartItems.length >= 1 && (
           <div className="cart-bottom">
             <div className="total">

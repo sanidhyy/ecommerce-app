@@ -3,10 +3,12 @@ import Link from "next/link";
 
 import { urlFor } from "../lib/client";
 
+// Hero Banner
 const HeroBanner = ({ heroBanner }) => {
   return (
     <div className="hero-banner-container">
       <div>
+        {/* Banner Info */}
         <p className="beats-solo">{heroBanner.smallText}</p>
         <h3>{heroBanner.midText}</h3>
         <h1>{heroBanner.largeText1}</h1>
@@ -16,6 +18,7 @@ const HeroBanner = ({ heroBanner }) => {
           className="hero-banner-image"
         />
 
+        {/* Banner Description and Links */}
         <div>
           <Link href={`/product/${heroBanner.product}`}>
             <button type="button">{heroBanner.buttonText}</button>

@@ -1,10 +1,13 @@
 import Stripe from "stripe";
 
+// Initialize Stripe Object
 const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
+  // Only accept POST requests
   if (req.method === "POST") {
     try {
+      // Stripe Options
       const params = {
         submit_type: "pay",
         mode: "payment",
@@ -45,9 +48,11 @@ export default async function handler(req, res) {
 
       res.status(200).json(session);
     } catch (err) {
+      // Error
       res.status(err.statusCode || 500).json(err.message);
     }
   } else {
+    // Method Not allowed
     res.setHeader("Allow", "POST");
     res.status(405).end("Method Not Allowed");
   }

@@ -1,8 +1,10 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { toast } from "react-hot-toast";
 
+// Create context
 const Context = createContext();
 
+// Export State Context
 export const StateContext = ({ children }) => {
   const [showCart, setShowCart] = useState(false);
   const [cartItems, setCartItems] = useState([]);
@@ -12,10 +14,12 @@ export const StateContext = ({ children }) => {
 
   let foundProduct;
   let index;
+
   const PRODUCT_ITEMS = "cart_product_items";
   const PRODUCT_PRICE = "cart_product_price";
   const PRODUCT_QTY = "cart_product_qty";
 
+  // Get Cart Items from localStorage each time page is loaded
   useEffect(() => {
     const cart_product_items = JSON.parse(
       localStorage.getItem(PRODUCT_ITEMS) || "[]"
@@ -30,18 +34,22 @@ export const StateContext = ({ children }) => {
     setTotalQuantities(cart_product_qty);
   }, []);
 
+  // add items
   const addToLocalStorage = (product) => {
     localStorage.setItem(PRODUCT_ITEMS, JSON.stringify(product));
   };
 
+  // add total price
   const addPriceToLocalStorage = (price) => {
     localStorage.setItem(PRODUCT_PRICE, price);
   };
 
+  // add total quantity
   const addQtyToLocalStorage = (qty) => {
     localStorage.setItem(PRODUCT_QTY, qty);
   };
 
+  // when new item is added
   const onAdd = (product, quantity) => {
     const checkProductInCart = cartItems.find(
       (item) => item._id === product._id
@@ -77,6 +85,7 @@ export const StateContext = ({ children }) => {
     toast.success(`${qty} ${product.name} added to the cart.`);
   };
 
+  // when existing item is removed
   const onRemove = (product) => {
     foundProduct = cartItems.find((item) => item._id === product._id);
     const newCartItems = cartItems.filter((item) => item._id !== product._id);
@@ -100,6 +109,7 @@ export const StateContext = ({ children }) => {
     addToLocalStorage(newCartItems);
   };
 
+  // increment and decrement each item quantity
   const toggleCartItemQuantity = (id, value) => {
     foundProduct = cartItems.find((item) => item._id === id);
     index = cartItems.findIndex((product) => product._id === id);
@@ -135,10 +145,12 @@ export const StateContext = ({ children }) => {
     addToLocalStorage(newCartItems);
   };
 
+  // increment qty
   const incQty = () => {
     setQty((prevQty) => prevQty + 1);
   };
 
+  // decrement qty
   const decQty = () => {
     setQty((prevQty) => {
       if (prevQty - 1 < 1) return 1;

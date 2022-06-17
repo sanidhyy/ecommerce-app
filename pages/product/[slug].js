@@ -10,11 +10,13 @@ import { useStateContext } from "../../context/StateContext";
 import { Product } from "../../components";
 import { client, urlFor } from "../../lib/client";
 
+// Product details
 const ProductDetails = ({ products, product }) => {
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
 
+  // handle Buy now
   const handleBuyNow = () => {
     onAdd(product, qty);
 
@@ -33,6 +35,7 @@ const ProductDetails = ({ products, product }) => {
             />
           </div>
 
+          {/* Product Images */}
           <div className="small-images-container">
             {image?.map((item, i) => (
               <img
@@ -47,6 +50,7 @@ const ProductDetails = ({ products, product }) => {
           </div>
         </div>
 
+        {/* Product Description */}
         <div className="product-detail-desc">
           <h1>{name}</h1>
           <div className="reviews">
@@ -74,6 +78,8 @@ const ProductDetails = ({ products, product }) => {
               </span>
             </p>
           </div>
+
+          {/* 👍 Important Buttons */}
           <div className="buttons">
             <button
               type="button"
@@ -104,6 +110,7 @@ const ProductDetails = ({ products, product }) => {
   );
 };
 
+// render product
 export const getStaticPaths = async () => {
   const query = `*[_type == "product"] {
     slug {
@@ -112,6 +119,7 @@ export const getStaticPaths = async () => {
   }
   `;
 
+  // fetch each product
   const products = await client.fetch(query);
 
   const paths = products.map((product) => ({
@@ -126,6 +134,7 @@ export const getStaticPaths = async () => {
   };
 };
 
+// API route to fetch product and banner
 export const getStaticProps = async ({ params: { slug } }) => {
   const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
   const productsQuery = '*[_type == "product"]';
