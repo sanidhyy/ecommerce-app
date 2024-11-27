@@ -12,7 +12,7 @@
     "@babel/core": "^7.26.0",
     "@sanity/client": "^3.2.0",
     "@sanity/image-url": "^1.1.0",
-    "@stripe/stripe-js": "^1.25.0",
+    "@stripe/stripe-js": "^5.2.0",
     "canvas-confetti": "^1.5.1",
     "next": "12.1.0",
     "next-sanity-image": "^3.2.1",
