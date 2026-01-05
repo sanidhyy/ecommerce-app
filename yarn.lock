@@ -429,6 +429,16 @@
   resolved "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.1.0.tgz"
   integrity sha512-aBvcbMwuanDH4EMrL2TthNJy+4nP59Bimn8egqv6GHMVj0a44cU6Au4PjOhLNqEh9l+IpRGBqMTzec94UdC5xg==
 
+"@noble/ed25519@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@noble/ed25519/-/ed25519-3.0.0.tgz#720d4cdb6b5f632e29164a7e9d5cdfeb82a7ac86"
+  integrity sha512-QyteqMNm0GLqfa5SoYbSC3+Pvykwpn95Zgth4MFVSMKBB75ELl9tX1LAVsN4c3HXOrakHsF2gL4zWDAYCcsnzg==
+
+"@noble/hashes@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-2.0.1.tgz#fc1a928061d1232b0a52bb754393c37a5216c89e"
+  integrity sha512-XlOlEbQcE9fmuXxrVTXCTlG2nlRXa9Rj3rr5Ue/+tX+nmkgbX720YHh0VR3hBF9xDvwnb8D2shVGOwNx+ulArw==
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
@@ -479,10 +489,25 @@
     event-source-polyfill "1.0.25"
     eventsource "^2.0.2"
 
-"@sanity/image-url@^1.0.0", "@sanity/image-url@^1.1.0":
+"@sanity/image-url@^1.0.0":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@sanity/image-url/-/image-url-1.1.0.tgz"
   integrity sha512-JHumVRxzzaZAJyOimntdukA9TjjzsJiaiq/uUBdTknMLCNvtM6KQ5OCp6W5fIdY78uyFxtQjz+MPXwK8WBIxWg==
+
+"@sanity/image-url@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-2.0.2.tgz#7f9c22f304ec002ad4b8e9b179ef2c981b42f31f"
+  integrity sha512-JnwFIHATLXHGVTCKmVwV0xy3xKwGlgVfeUB9cWxu72xJZMsQUyFgGiTz4zD9gRXuncAndkmtzHeIG+2vhKgxHA==
+  dependencies:
+    "@sanity/signed-urls" "^2.0.1"
+
+"@sanity/signed-urls@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@sanity/signed-urls/-/signed-urls-2.0.1.tgz#740deb971796ba517598fa6c183dcbe177dbf8c5"
+  integrity sha512-/u++FnDbaXDWHiHxG1Q4rbGsKRPf6lmTKsXeZ3bbbty/kNHDhVRUA5mRA+TtXlbPrse4ksv3a2vAerKNUNDZOw==
+  dependencies:
+    "@noble/ed25519" "^3.0.0"
+    "@noble/hashes" "^2.0.0"
 
 "@sanity/timed-out@^4.0.2":
   version "4.0.2"

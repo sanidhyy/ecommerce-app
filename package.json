@@ -11,7 +11,7 @@
   "dependencies": {
     "@babel/core": "^7.28.5",
     "@sanity/client": "^3.4.1",
-    "@sanity/image-url": "^1.1.0",
+    "@sanity/image-url": "^2.0.2",
     "@stripe/stripe-js": "^7.3.1",
     "canvas-confetti": "^1.9.4",
     "next": "12.1.0",
