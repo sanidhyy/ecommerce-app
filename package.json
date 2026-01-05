@@ -25,6 +25,6 @@
   "devDependencies": {
     "@babel/preset-react": "^7.27.1",
     "eslint": "9.39.2",
-    "eslint-config-next": "15.3.3"
+    "eslint-config-next": "16.1.1"
   }
 }
