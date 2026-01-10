@@ -2,13 +2,13 @@
 
 ![E-commerce Web App using Next JS](https://user-images.githubusercontent.com/71302066/174431664-59ee8d85-ed57-4e74-a002-f3fe2d166966.png)
 
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/Technical-Shubham-tech)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Technical-Shubham-tech/ecommerce-app/commits/main)
-[![GitHub license](https://img.shields.io/github/license/Technical-Shubham-tech/ecommerce-app)](https://github.com/Technical-Shubham-tech/ecommerce-app/blob/main/LICENSE.md)
-[![GitHub branches](https://badgen.net/github/branches/Technical-Shubham-tech/ecommerce-app/)](https://github.com/Technical-Shubham-tech/ecommerce-app/branches)
-[![Github commits](https://badgen.net/github/commits/Technical-Shubham-tech/ecommerce-app/main)](https://github.com/Technical-Shubham-tech/ecommerce-app/commits/)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/sanidhyy)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/sanidhyy/ecommerce-app/commits/main)
+[![GitHub license](https://img.shields.io/github/license/sanidhyy/ecommerce-app)](https://github.com/sanidhyy/ecommerce-app/blob/main/LICENSE.md)
+[![GitHub branches](https://badgen.net/github/branches/sanidhyy/ecommerce-app/)](https://github.com/sanidhyy/ecommerce-app/branches)
+[![Github commits](https://badgen.net/github/commits/sanidhyy/ecommerce-app/main)](https://github.com/sanidhyy/ecommerce-app/commits/)
 [![Website](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://ecommerce-app-next.vercel.app/)
-[![GitHub issues](https://img.shields.io/github/issues/Technical-Shubham-tech/ecommerce-app)](https://github.com/Technical-Shubham-tech/ecommerce-app/issues)
+[![GitHub issues](https://img.shields.io/github/issues/sanidhyy/ecommerce-app)](https://github.com/sanidhyy/ecommerce-app/issues)
 
 ## 📌 How to setup this App?
 
@@ -89,8 +89,8 @@ You are more than welcome to contribute. Just submit changes via pull request an
 
 ## 🚀 Follow Me
 
-[![GitHub followers](https://img.shields.io/github/followers/Technical-Shubham-tech?style=social&label=Follow&maxAge=2592000)](https://github.com/Technical-Shubham-tech)
-[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTechnicalShubam)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FTechnical-Shubham-tech%2Fmedical-chat-app)
+[![GitHub followers](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/sanidhyy)
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fsanidhyyy)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fsanidhyy%2Fmedical-chat-app)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCNAz_hUVBG2ZUN8TVm0bmYw)
 
 ## Give A Star ⭐
