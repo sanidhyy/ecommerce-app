@@ -19,7 +19,7 @@ const Footer = () => {
 
         {/* Twitter/X Link */}
         <a
-          href="https://twitter.com"
+          href="https://x.com/_sanidhyy"
           target="_blank"
           rel="noopener noreferrer"
         >
