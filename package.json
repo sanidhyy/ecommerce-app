@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@babel/core": "^7.28.5",
+    "@babel/core": "^7.29.0",
     "@sanity/client": "^3.4.1",
     "@sanity/image-url": "^2.0.3",
     "@stripe/stripe-js": "^8.11.0",
