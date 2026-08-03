@@ -509,10 +509,10 @@
   resolved "https://registry.npmjs.org/@sanity/timed-out/-/timed-out-4.0.2.tgz"
   integrity sha512-NBDKGj14g9Z+bopIvZcQKWCzJq5JSrdmzRR1CS+iyA3Gm8SnIWBfZa7I3mTg2X6Nu8LQXG0EPKXdOGozLS4i3w==
 
-"@stripe/stripe-js@^9.12.0":
-  version "9.12.0"
-  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-9.12.0.tgz#f524394cf791d4936d6ca5277518ad9f69cf8b72"
-  integrity sha512-wCUYZNYo7E/6B3Rv2i/g/Rmj2mTiOX6HEwWYUWUuNUKwEhzTo/SXuQ1IoNo3mknWIHUQyqdakv1Nl2SiYPrCrw==
+"@stripe/stripe-js@^9.12.1":
+  version "9.12.1"
+  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-9.12.1.tgz#b6d13d48cfe8b49acf199233bd0626d180faeccb"
+  integrity sha512-KLXPvjA0BfS4dQnW+ddHjwtIXMnIfKYxqmeNMmQCfKjvYog0cSG+Z7ZvK4RH1+bV90GC07nUztWDRWmJLi5HZQ==
 
 "@types/estree@^1.0.6":
   version "1.0.8"
