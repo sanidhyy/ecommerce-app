@@ -13,14 +13,14 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/vision": "^3.68.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "sanity": "^3.68.3",
-    "styled-components": "^6.1.13"
+    "@sanity/vision": "^6.13.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sanity": "^6.13.2",
+    "styled-components": "^6.5.3"
   },
   "devDependencies": {
-    "@sanity/eslint-config-studio": "^4.0.0",
+    "@sanity/eslint-config-studio": "^7.0.0",
     "eslint": "^8.57.1"
   }
 }
