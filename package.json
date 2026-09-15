@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "studio": "pnpm --dir sanity-ecommerce-app start",
+    "studio": "pnpm --dir sanity-ecommerce-app dev",
     "studio:build": "pnpm --dir sanity-ecommerce-app build"
   },
   "dependencies": {

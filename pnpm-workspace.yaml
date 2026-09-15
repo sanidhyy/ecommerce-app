@@ -4,5 +4,6 @@ packages:
 allowBuilds:
   core-js: false
   es5-ext: false
+  esbuild: true
   uglifyjs-webpack-plugin: false
   unrs-resolver: false
