@@ -1,0 +1,8 @@
+packages:
+  - "sanity-ecommerce-app"
+
+allowBuilds:
+  core-js: false
+  es5-ext: false
+  uglifyjs-webpack-plugin: false
+  unrs-resolver: false

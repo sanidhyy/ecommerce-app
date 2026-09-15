@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "studio": "pnpm --dir sanity-ecommerce-app start",
+    "studio:build": "pnpm --dir sanity-ecommerce-app build"
   },
   "dependencies": {
     "@babel/core": "^7.29.7",
