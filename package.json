@@ -10,6 +10,7 @@
     "studio": "pnpm --dir sanity-ecommerce-app dev",
     "studio:build": "pnpm --dir sanity-ecommerce-app build"
   },
+  "packageManager": "pnpm@11.15.1",
   "dependencies": {
     "@sanity/client": "^8.6.1",
     "@sanity/image-url": "^2.1.1",
