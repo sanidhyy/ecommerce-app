@@ -23,7 +23,12 @@
     "stripe": "^22.6.2"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/node": "^26.5.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "eslint": "^9.39.5",
-    "eslint-config-next": "16.3.5"
+    "eslint-config-next": "16.3.5",
+    "typescript": "^6.0.3"
   }
 }
