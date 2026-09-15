@@ -29,7 +29,7 @@ export async function POST(request: Request) {
 
         return {
           price_data: {
-            currency: "inr",
+            currency: "usd",
             product_data: {
               name: item.name,
               images: [newImage],
