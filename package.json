@@ -11,13 +11,11 @@
     "studio:build": "pnpm --dir sanity-ecommerce-app build"
   },
   "dependencies": {
-    "@babel/core": "^7.29.7",
     "@sanity/client": "^3.4.1",
     "@sanity/image-url": "^2.1.1",
     "@stripe/stripe-js": "^9.15.0",
     "canvas-confetti": "^1.9.4",
     "next": "12.1.0",
-    "next-sanity-image": "^5.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hot-toast": "^2.6.0",
@@ -25,8 +23,7 @@
     "stripe": "^22.6.1"
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.29.7",
-    "eslint": "9.39.2",
-    "eslint-config-next": "16.3.4"
+    "eslint": "^8.57.1",
+    "eslint-config-next": "12.1.0"
   }
 }
