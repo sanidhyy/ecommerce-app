@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from "react";
+"use client";
+
+import { useEffect } from "react";
 import Link from "next/link";
 import { BsBagCheckFill } from "react-icons/bs";
 
-import { useStateContext } from "../context/StateContext";
-import { runFireworks } from "../lib/utils";
+import { useStateContext } from "../../context/StateContext";
+import { runFireworks } from "../../lib/utils";
 
-// Success Page
-const Success = () => {
+export default function SuccessPage() {
   const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
 
-  // clear local storage items on success payment
   useEffect(() => {
     localStorage.clear();
     setCartItems([]);
     setTotalPrice(0);
     setTotalQuantities(0);
     runFireworks();
-  }, []);
+  }, [setCartItems, setTotalPrice, setTotalQuantities]);
 
   return (
     <div className="success-wrapper">
@@ -24,8 +24,6 @@ const Success = () => {
         <p className="icon">
           <BsBagCheckFill />
         </p>
-
-        {/* Success description */}
         <h2>Thank you for your order!</h2>
         <p className="email-msg">Check your email inbox for the receipt.</p>
         <p className="description">
@@ -34,16 +32,12 @@ const Success = () => {
             order@example.com
           </a>
         </p>
-
-        {/* Continue Shopping */}
         <Link href="/">
-          <button type="button" width="300px" className="btn">
+          <button type="button" className="btn">
             Continue Shopping
           </button>
         </Link>
       </div>
     </div>
   );
-};
-
-export default Success;
+}

@@ -9,7 +9,7 @@ export interface SanityImage {
 export interface Product {
   _id: string;
   _type?: "product";
-  image?: SanityImage[];
+  image: SanityImage[];
   name: string;
   slug: {
     current: string;
@@ -21,16 +21,16 @@ export interface Product {
 export interface Banner {
   _id: string;
   _type?: "banner";
-  image?: SanityImage;
-  buttonText?: string;
-  product?: string;
-  desc?: string;
-  smallText?: string;
-  midText?: string;
-  largeText1?: string;
-  largeText2?: string;
-  discount?: string;
-  saleTime?: string;
+  image: SanityImage;
+  buttonText: string;
+  product: string;
+  desc: string;
+  smallText: string;
+  midText: string;
+  largeText1: string;
+  largeText2: string;
+  discount: string;
+  saleTime: string;
 }
 
 export interface CartItem extends Product {
