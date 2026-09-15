@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "studio": "pnpm --dir sanity-ecommerce-app dev",
     "studio:build": "pnpm --dir sanity-ecommerce-app build"
   },
@@ -15,7 +15,7 @@
     "@sanity/image-url": "^2.1.1",
     "@stripe/stripe-js": "^9.15.0",
     "canvas-confetti": "^1.9.4",
-    "next": "15.5.25",
+    "next": "16.3.5",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "react-hot-toast": "^2.6.0",
@@ -24,6 +24,6 @@
   },
   "devDependencies": {
     "eslint": "^9.39.5",
-    "eslint-config-next": "15.5.25"
+    "eslint-config-next": "16.3.5"
   }
 }
