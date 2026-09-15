@@ -1,8 +1,8 @@
-import React from "react";
 import Link from "next/link";
-import { urlFor } from "../lib/client";
 
-// Footer Banner
+import { urlFor } from "../lib/client";
+import type { Banner } from "../types/sanity";
+
 const FooterBanner = ({
   footerBanner: {
     discount,
@@ -16,11 +16,12 @@ const FooterBanner = ({
     buttonText,
     image,
   },
+}: {
+  footerBanner: Banner;
 }) => {
   return (
     <div className="footer-banner-container">
       <div className="banner-desc">
-        {/* Banner Left */}
         <div className="left">
           <p>{discount}</p>
           <h3>{largeText1}</h3>
@@ -28,7 +29,6 @@ const FooterBanner = ({
           <p>{saleTime}</p>
         </div>
 
-        {/* Banner Right */}
         <div className="right">
           <p>{smallText}</p>
           <h3>{midText}</h3>
@@ -38,8 +38,11 @@ const FooterBanner = ({
           </Link>
         </div>
 
-        {/* Banner Image */}
-        <img src={urlFor(image)} className="footer-banner-image" />
+        <img
+          src={urlFor(image).url()}
+          alt={smallText}
+          className="footer-banner-image"
+        />
       </div>
     </div>
   );
