@@ -15,15 +15,15 @@
     "@sanity/image-url": "^2.1.1",
     "@stripe/stripe-js": "^9.15.0",
     "canvas-confetti": "^1.9.4",
-    "next": "14.2.35",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "next": "15.5.25",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
     "react-hot-toast": "^2.6.0",
     "react-icons": "^5.7.0",
     "stripe": "^22.6.1"
   },
   "devDependencies": {
-    "eslint": "^8.57.1",
-    "eslint-config-next": "14.2.35"
+    "eslint": "^9.39.5",
+    "eslint-config-next": "15.5.25"
   }
 }
