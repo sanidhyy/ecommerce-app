@@ -18,9 +18,10 @@
 
 ```
 NEXT_PUBLIC_SANITY_PROJECT_ID=xxxxxxxx
-NEXT_PUBLIC_SANITY_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+SANITY_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxx
-NEXT_PUBLIC_STRIPE_SECRET_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+STRIPE_SECRET_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+STRIPE_SHIPPING_RATE_ID=shr_xxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 4. Clone this **repository** to your local computer.
@@ -33,7 +34,7 @@ NEXT_PUBLIC_STRIPE_SECRET_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 9. Type `npm run studio` or `pnpm studio` to start sanity studio on localhost. URL will be shown in terminal.
    ![sanity start output](https://user-images.githubusercontent.com/71302066/174443446-7f470faf-d256-4b37-807d-354a223bc715.png)
 10. After going to localhost, login in with your account. Now, your account is connected with this project.
-11. To get `NEXT_PUBLIC_SANITY_PROJECT_ID` and `NEXT_PUBLIC_SANITY_TOKEN`, go to [sanity](https://www.sanity.io).
+11. To get `NEXT_PUBLIC_SANITY_PROJECT_ID` and `SANITY_TOKEN`, go to [sanity](https://www.sanity.io).
 12. Copy your **project id** as shown below:
     ![copy project id](https://user-images.githubusercontent.com/71302066/174444494-5388b489-ebc2-4f0f-ac16-9b0b539a0ece.png)
 
@@ -49,14 +50,14 @@ NEXT_PUBLIC_STRIPE_SECRET_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 15. After sanity is setup successfully, it's time to setup online payments with stripe.
 16. Create an account in [Stripe](https://stripe.com). Make sure **test mode** is enabled.
-17. On account dashboard, you can simply get your `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` and `NEXT_PUBLIC_STRIPE_SECRET_KEY`.
+17. On account dashboard, you can simply get your `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` and `STRIPE_SECRET_KEY`.
     ![copy keys](https://user-images.githubusercontent.com/71302066/174445248-cce52da0-e172-433b-906f-88399750f93c.png)
     **NOTE:** Don't share these keys publicaly.
 18. You can also create custom shipping rates, to create one, go to: **Products** > Shipping rates > Create shipping rate.
 
 ![Create shipping rate](https://user-images.githubusercontent.com/71302066/174445465-bc16148a-8c07-4a3e-9599-3ac6336867d7.png)
 
-19. After creating shipping rate, you can copy **shipping rate id** and paste it in **pages/api/stripe.js**
+19. After creating a shipping rate, copy the **shipping rate id** into `STRIPE_SHIPPING_RATE_ID` in your `.env` file.
     ![copy shipping rate id](https://user-images.githubusercontent.com/71302066/174445681-f7a4b6a8-2dc5-43b3-9a21-096ec71a39e3.png)
 
 ![paste shipping rate id](https://user-images.githubusercontent.com/71302066/174445828-1eeb8b09-d409-4f9a-b698-d199f1299cd1.png)

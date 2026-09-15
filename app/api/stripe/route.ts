@@ -3,7 +3,7 @@ import Stripe from "stripe";
 
 import type { CartItem } from "../../../types/sanity";
 
-const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 export async function POST(request: Request) {
   try {
@@ -15,13 +15,15 @@ export async function POST(request: Request) {
       mode: "payment",
       payment_method_types: ["card"],
       billing_address_collection: "auto",
-      shipping_options: [{ shipping_rate: "shr_1NwQFaSIrgkSOccyQtYF1wz5" }],
+      shipping_options: [
+        { shipping_rate: process.env.STRIPE_SHIPPING_RATE_ID },
+      ],
       line_items: cartItems.map((item) => {
         const img = item.image[0].asset?._ref ?? "";
         const newImage = img
           .replace(
             "image-",
-            "https://cdn.sanity.io/images/7fvfibo0/production/",
+            `https://cdn.sanity.io/images/${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}/production/`,
           )
           .replace("-webp", ".webp");
 
